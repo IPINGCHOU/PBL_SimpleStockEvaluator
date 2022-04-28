@@ -146,9 +146,9 @@ class stockEval:
             self.stock_var[colname] = -1*VaR + self.initial_port
             self.stock_cvar[colname] = -1*CVaR + self.initial_port
 
-            if VaR_ratio > 0.35 and CVaR_ratio > 0.35:
+            if VaR_ratio > 0.35 and CVaR_ratio > 0.45:
                 self.stock_risk[colname] = 'High'
-            elif VaR_ratio < 0.15 or CVaR_ratio < 0.15:
+            elif VaR_ratio < 0.15 or CVaR_ratio < 0.10:
                 self.stock_risk[colname] = 'Low'
             else:
                 self.stock_risk[colname] = 'Med'

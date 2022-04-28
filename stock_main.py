@@ -35,7 +35,7 @@ question_pairs = []
 for q, o in zip(all_q, all_a):
     question_pairs.append(StockQuizBody(q, o))
 #%%
-# question_pairs = question_pairs[:1]
+question_pairs = question_pairs[:1]
 
 s_quiz = StockQuiz(question_pairs)
 s_ui = stockUI(stock_quiz = s_quiz)
